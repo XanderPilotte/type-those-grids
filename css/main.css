@@ -1,0 +1,8 @@
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "h1 h1 h1"
+    ".lrg-photo .lrg-photo .lrg-photo"
+    ".1 .2 .3"
+}
