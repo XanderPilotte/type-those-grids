@@ -1,8 +1,55 @@
-dl {
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Merriweather, serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    "h1 h1 h1"
-    ".lrg-photo .lrg-photo .lrg-photo"
-    ".1 .2 .3"
+    "header header header"
+    "banner banner banner"
+    "space-1 space-2 space-3";
+  gap: .75rem;
+}
+
+body {
+  font-size: .9rem;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+main > figure > img {
+  grid-area: banner;
+  max-width: inherit;
+}
+
+main > figure > img {
+  display: grid;
+  grid-area: banner;
+}
+
+.banner-title {
+  grid-area: banner;
+  padding: 1.5rem 1rem;
+  align-self: end;
+  color: #fff;
 }
